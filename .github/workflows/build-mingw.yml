@@ -20,7 +20,7 @@ jobs:
       
       - name: git clone
         shell: cmd
-        run: git clone --recursive https://github.com/IfcOpenShell/IfcOpenshell.gitt && cd openssl && git checkout ${{ env.tagName }}
+        run: git clone --recursive https://github.com/IfcOpenShell/IfcOpenshell.git && cd openssl && git checkout ${{ env.tagName }}
       
       - name: Install MSYS2
         uses: msys2/setup-msys2@v2
